@@ -1,0 +1,60 @@
+// Loading font families
+
+$font-files: font-files("titillium/titillium-semibold.woff", "titillium/titillium-semibold.ttf", "titillium/titillium-semibold.svg#titilliumbold");
+$eot: "titillium/titillium-semibold.eot";
+@include font-face("titillium-bold", $font-files, $eot);
+
+$font-files: font-files("titillium/titillium-regular.woff", "titillium/titillium-regular.ttf", "titillium/titillium-regular.svg#titilliumbold");
+$eot: "titillium/titillium-regular.eot";
+@include font-face("titillium-regular", $font-files, $eot);
+
+$theme-primary-bg: 				#fff;
+$theme-secondary-bg: 			#f9f9f9;
+
+$theme-text-color: 				#727272;
+$theme-text-font-family: 		"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$theme-primary: 				#d54900;
+
+$theme-headings-color:  		#000;
+$theme-headings-faded: 			#bfbfbf;
+$theme-headings-font-family:    "titillium-bold";
+$theme-headings-regular:    	"titillium-regular";
+$theme-headings-font-weight:    300;
+
+$top-bar-color: 				#c1c1c1;
+
+$font-size-base:          		12px;
+
+$footer-background-color: 		#313131;
+$copyright-background-color: 	#2c2c2c;
+
+// Overwrites
+
+$body-bg: 				$theme-primary-bg;
+$text-color:            $theme-text-color;
+$link-color:            $theme-primary;
+$link-hover-color:      $theme-headings-color;
+
+$font-family:  			$theme-text-font-family;
+
+$success:         		#5cb85c;
+$info:            		#5bc0de;
+$warning:         		#f0ad4e;
+$danger:          		$theme-primary;
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs: 480px !default;
+
+// Small screen / tablet
+$screen-sm: 768px !default;
+
+// Medium screen / desktop
+$screen-md: 992px !default;
+
+// Large screen / wide desktop
+$screen-lg: 1200px !default;

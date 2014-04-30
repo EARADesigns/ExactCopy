@@ -1,0 +1,149 @@
+.sidebar {
+
+	@media (max-width: $screen-md) {
+		margin-top: 60px;
+	}
+
+	/* Custom menu
+	---------------------------------------- */
+
+	.widget-title {
+		font-size: 18px;
+		margin-bottom: 25px;
+		margin-top: 30px;
+	}
+
+	.menu {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+
+			&.current-menu-ancestor a {
+				color: #fff;
+				padding: 8px 21px;
+			}
+		}
+
+		a {
+			border-bottom: 1px solid #ebebeb;
+			color: #848484;
+			display: block;
+			padding: 8px 0;
+			position: relative;
+
+			&:after {
+				content: "›";
+				font-size: 17px;
+				font-family: Georgia, serif;
+				position: absolute;
+				right: 11px;
+				top: 3px;
+			}
+		}
+	}
+}
+
+/* Tag Cloud
+---------------------------------------- */
+
+.tagcloud {
+	@include clearfix;
+	margin: -1px;
+
+	a {
+		background-color: #292929;
+		border-radius: 3px;
+		color: #fff;
+		float: left;
+		margin: 1px;
+		padding: 5px 23px;
+
+		&:hover {
+			color: #fff !important;
+		}
+	}
+}
+
+/* Search
+---------------------------------------- */
+
+.searchform {
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 10px;
+	position: relative;
+
+	input[type="text"] {
+		outline: none;
+		border: none;
+		padding: 5px 0;
+		width: 100%;
+	}
+
+	button[type="submit"] {
+		background: #fff;
+		border: none;
+		font-size: 14px;
+		position: absolute;
+		right: 0;
+		top: 4px;
+	}
+}
+
+/* Categories
+---------------------------------------- */
+
+.widget-categories {
+	padding: 0;
+
+	li {
+		border-bottom: 1px solid #ebebeb;
+		list-style: none;
+	}
+
+	a {
+		color: #848484;
+		display: block;
+		padding: 9px 0;
+	}
+}
+
+/* Social icons
+---------------------------------------- */
+
+.socialize {
+	padding: 0;
+
+	li {
+		display: inline-block;
+		font-size: 20px;
+		list-style: none;
+	}
+
+	a {
+		margin: 0 2px;
+		padding: 0 10px;
+	}
+}
+
+/* RSS feed
+---------------------------------------- */
+
+.widget_rss {
+	padding: 0;
+
+	.rsswidget {
+		display: block;
+		text-transform: uppercase;
+	}
+
+	cite, .rss-date {
+		display: block;
+		margin: 4px 0;
+	}
+
+	li {
+		list-style: none;
+	}
+}
