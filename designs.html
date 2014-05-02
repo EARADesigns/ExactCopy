@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="assets/css/font-awesome.css">
 	<link rel="stylesheet" href="assets/css/core.css">
 	<link rel="stylesheet" href="assets/css/color.css">
+	s<!-- including layerslider stylesheets -->
+    <link rel="stylesheet" href="assets/css/layerslider.css">
 </head>
 <body>
 	<div class="site-wrapper">
@@ -47,34 +49,35 @@
 			<div class="tear"></div>
 
 			<div class="nav-wrap">
-				<div class="container">
-					<div class="site-logo retina">
-						<a href="index.html">
-							<img src="images/exact_logo_retina.png" alt="Altus logo">
-						</a>
-					</div>
+                    <div class="container">
+                        <div class="site-logo retina">
+                            <a href="index.html">
+                                <img src="images/exact_logo_retina.png" alt="ExactCopy Logo">
+                            </a>
+                        </div>
+                        
 
-					
+                        
 
-					<button class="navbar-toggle" type="button">
-			        	<span class="sr-only">Toggle navigation</span>
-			        	<span class="icon-bar"></span>
-			        	<span class="icon-bar"></span>
-			        	<span class="icon-bar"></span>
-			      	</button>
+                        <button class="navbar-toggle" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-					<nav class="site-navigation">
-						<ul>
-							<li ><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About us</a></li>
-                            <li class="current_page_item"><a href="designs.html">Designs</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+                        <nav class="site-navigation">
+                            <ul>
+                                <li class="current_page_item"><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="designs.html">Designs</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
 		</header>
 
 		<div class="page-heading" style="background-image: url(images/designs.jpg);">
@@ -268,14 +271,14 @@
 				</div>
 			</div>
 
-			<ul class="page-numbers">
+			<!--<ul class="page-numbers">
 				<li><a class="first page-numbers" href="#"></a></li>
 				<li><a class="prev page-numbers" href="#"></a></li>
 				<li><span class="page-numbers current">1</span></li>
 				<li><a class="page-numbers" href="#">2</a></li>
 				<li><a class="next page-numbers" href="#"></a></li>
 				<li><a class="last page-numbers" href="#"></a></li>
-			</ul>
+			</ul>-->
 		</section>
 		<div class="tear2"></div>
 		 <footer class="site-footer">
@@ -367,5 +370,29 @@
 	<script src="assets/js/bootstrap/collapse.js"></script>
 	<script src="assets/js/theme.js"></script>
 	<script src="assets/js/smoothscroll.js"></script>
+	<!-- including scripts -->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap/tab.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/smoothscroll.js"></script>
+
+        <!-- including layerslider scripts -->
+        <script src="assets/js/greensock.js"></script>
+        <script src="assets/js/layerslider.transitions.js"></script>
+        <script src="assets/js/layerslider.kreaturamedia.jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#layerslider').layerSlider({
+                    skin: 'pr',
+                    skinsPath: 'assets/css/layerslider/skins/',
+                    responsiveUnder: 1200,
+                    layersContainer: 1200,
+                    responsive: false,
+                    showCircleTimer: false,
+                    thumbnailNavigation: 'disabled',
+                    navStartStop: false,
+                });
+            });
+        </script>
 </body>
 </html>

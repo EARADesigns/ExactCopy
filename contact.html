@@ -92,7 +92,7 @@
                 <div class="col-md-12">
                     <h2 class="heading">
                         <span>Shop 16, Twin Oaks Centre, 142 Main Road, Somerset West, 7130</span><br>
-                        <span style="padding-bottom:5px;padding-top:10px;">Tel: 021 850 0664</span>
+                        <span style="padding-bottom:5px;padding-top:10px;border-bottom: 0px solid ;">Tel: 021 850 0664</span>
                     </h2>
                 </div>
             </div>
@@ -199,6 +199,30 @@
                 });
             });
         </script>
+        <!-- including scripts -->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap/tab.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/smoothscroll.js"></script>
+
+        <!-- including layerslider scripts -->
+        <script src="assets/js/greensock.js"></script>
+        <script src="assets/js/layerslider.transitions.js"></script>
+        <script src="assets/js/layerslider.kreaturamedia.jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#layerslider').layerSlider({
+                    skin: 'pr',
+                    skinsPath: 'assets/css/layerslider/skins/',
+                    responsiveUnder: 1200,
+                    layersContainer: 1200,
+                    responsive: false,
+                    showCircleTimer: false,
+                    thumbnailNavigation: 'disabled',
+                    navStartStop: false,
+                });
+            });
+        </script>
 	
 	<!-- including scripts -->
 	<script src="assets/js/jquery.js"></script>
@@ -238,5 +262,6 @@
 
         });
     </script>
+
 </body>
 </html>
